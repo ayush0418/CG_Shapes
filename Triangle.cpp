@@ -6,7 +6,7 @@ using namespace std;
 
 void init()
 {
-	glClearColor(1.0, 1.0, 0.0, 1.0);	// change the color of window argumentsTaken(R,G,B,aplha);
+	glClearColor(0.0, 0.0, 0.0, 1.0);	// change the color of window --> argumentsTaken(R,G,B,aplha);
 	glMatrixMode(GL_PROJECTION);
 	gluOrtho2D(0.0,800,0.0,800);
 }
@@ -16,6 +16,7 @@ void display()
 	
 	glClear(GL_COLOR_BUFFER_BIT);	
 	glBegin( GL_TRIANGLES );
+		glColor3f(0,0,1); 		// change the color of the shape  --> argumentsTaken(R,G,B);
 		glVertex2i( 250,300 );
         	glVertex2i( 450,300 ); 
            	glVertex2i( 350,425 );   
